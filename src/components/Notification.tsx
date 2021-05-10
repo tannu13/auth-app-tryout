@@ -1,8 +1,8 @@
-import {memo} from "react";
+import { memo } from "react";
 
 type Props = {
     message: string,
-    setNotificationStatus: any
+    setNotificationStatus: (b: boolean) => void
 }
 const Notification = (props: Props) => {
   return <div className="notification is-success">
